@@ -1,8 +1,7 @@
 * {
-    font-family: "Dosis", sans-serif;
+    font-family: "Urbanist", system-ui;
     font-optical-sizing: auto;
     font-weight: 100;
-    font-style: normal;
 }
 
 /* body {
@@ -10,9 +9,26 @@
 } */
 
 main {
+    height: 100vh;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    background-image: url('https://img.freepik.com/vettori-gratuito/sfondo-esagonale-sfumato_23-2148956844.jpg?t=st=1725304969~exp=1725308569~hmac=9e5cabafa415d30468cee8b5839565568cab9505377ac5a078b36f7a65d21363&w=1800');
+    background-size: cover;
+}
+
+#app {
+    padding: 30px;
+}
+
+.card {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 20px;
+}
+
+h1 {
+    font-weight: 100;
 }
 
 h1>span {
@@ -21,5 +37,9 @@ h1>span {
 
 span>span {
     font-weight: 900;
-    color: #F7CF0C;
+    color: #FEBF38;
+}
+
+li:nth-child(odd) {
+    color: #FEBF38;
 }
