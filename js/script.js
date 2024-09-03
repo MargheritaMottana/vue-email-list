@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
             // aggiunto array per contenere tutte le mail
-            emails: [''],
+            emails: [],
         }
     },
 
@@ -24,7 +24,9 @@ createApp({
 
                     // trasformata la funzione in arrow per poter usare il this
                     // in questo modo salvo il dato delle mail nell'array
+
                     this.emails.push(r.data.response)
+
                 });
         };
 

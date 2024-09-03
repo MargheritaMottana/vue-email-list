@@ -45,11 +45,15 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <ul>
+
+                            <!-- visualizza solo se sono 10 email -->
+                            <ul v-if=" emails.length == 10">
+                                <!-- visualizza la lista delle mail grazie al ciclo -->
                                 <li class="list-group-item fw-bold p-1" v-for=" email in emails">
                                     {{ email }}
                                 </li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
@@ -59,7 +63,10 @@
 
     </main>
 
-    <!-- axios -->
+    <!-- 
+    - axios 
+     è importante importarlo prima del file js
+     -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
